@@ -1,0 +1,42 @@
+@import 'variables';
+
+//共通パーツ
+
+//上にベールが覆ってるパーツ
+.thin-veil {
+    @include fullContainer;
+    background-color: rgba(255, 255, 255, .6);
+}
+//トーク相手一覧
+.people-info-list-wrap {
+    list-style: none;
+
+    .people-info-list-item {
+        &:nth-child(n + 2) {
+            margin-top: 20px;
+        }
+
+        .people-info-list-title {
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+    
+        .people-media-wrap {
+            margin-bottom: 0;
+            & > * {
+                border-radius: 50%;
+                display: block;
+                height: 50px;
+                object-fit: cover;
+                width: 50px;
+            }
+            & + .people-info-wrap {
+                margin-left: 15px;
+            }
+        }
+    }
+}
+
+
+//

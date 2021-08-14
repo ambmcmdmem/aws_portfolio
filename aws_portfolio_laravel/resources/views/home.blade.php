@@ -1,3 +1,4 @@
+<!--layouts/app.blade.phpを使っているということ-->
 @extends('layouts.app')
 
 @section('content')

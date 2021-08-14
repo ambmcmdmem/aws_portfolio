@@ -72,7 +72,8 @@
             </div>
         </nav>
 
-        <main class="py-4">
+        <main class="">
+            <!--@section('content')を取得する-->
             @yield('content')
         </main>
     </div>

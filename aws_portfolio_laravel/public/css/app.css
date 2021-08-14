@@ -10942,4 +10942,44 @@ a.text-dark:focus {
   }
 }
 
+.thin-veil {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.people-info-list-wrap {
+  list-style: none;
+}
+
+.people-info-list-wrap .people-info-list-item:nth-child(n+2) {
+  margin-top: 20px;
+}
+
+.people-info-list-wrap .people-info-list-item .people-info-list-title {
+  display: inline-block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.people-info-list-wrap .people-info-list-item .people-media-wrap {
+  margin-bottom: 0;
+}
+
+.people-info-list-wrap .people-info-list-item .people-media-wrap > * {
+  border-radius: 50%;
+  display: block;
+  height: 50px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 50px;
+}
+
+.people-info-list-wrap .people-info-list-item .people-media-wrap + .people-info-wrap {
+  margin-left: 15px;
+}
+
 
