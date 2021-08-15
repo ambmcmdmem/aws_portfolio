@@ -1,3 +1,1 @@
-const test:string = 'こんばんは';
-
-console.log(test);
+// パスワードを可視・不可視にする

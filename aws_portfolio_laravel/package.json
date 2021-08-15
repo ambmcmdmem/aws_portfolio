@@ -10,6 +10,7 @@
         "production": "mix --production"
     },
     "devDependencies": {
+        "@types/jquery": "^3.5.6",
         "axios": "^0.21",
         "bootstrap": "^4.0.0",
         "browser-sync-webpack-plugin": "^2.0.1",
