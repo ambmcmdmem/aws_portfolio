@@ -5,38 +5,98 @@
 //上にベールが覆ってるパーツ
 .thin-veil {
     @include fullContainer;
+    @include flexCenter;
     background-color: rgba(255, 255, 255, .6);
 }
+
 //トーク相手一覧
 .people-info-list-wrap {
-    list-style: none;
+    $leftMargin: 15px;
+    $activeBorderWidth: 5px;
 
+    list-style: none;
+    box-sizing: border-box;
+    padding-left: 0;
+    
     .people-info-list-item {
         &:nth-child(n + 2) {
-            margin-top: 20px;
+            margin-top: 25px;
         }
 
-        .people-info-list-title {
-            display: inline-block;
-            font-weight: bold;
-            margin-bottom: 5px;
-        }
-    
-        .people-media-wrap {
-            margin-bottom: 0;
-            & > * {
-                border-radius: 50%;
-                display: block;
-                height: 50px;
-                object-fit: cover;
-                width: 50px;
+        .people-info-title-wrap {
+            margin-bottom: 10px;
+            padding-left: $leftMargin;
+
+            .people-info-list-title {
+                display: inline-block;
+                font-weight: bold;
             }
-            & + .people-info-wrap {
-                margin-left: 15px;
+
+            & > *:nth-child(n + 2){
+                margin-left: 10px;
+            }
+        }
+        
+    
+        .people-info-item {
+            border-bottom: 1px solid #ccc;
+            padding: 10px 0 10px $leftMargin;
+
+            &:first-child {
+                border-top: 1px solid #ccc;
+            }
+
+            &.active {
+                background-color: $thinblue;
+                border-left: $activeBorderWidth solid $blue;
+                padding-left: $leftMargin - $activeBorderWidth;                
+            }
+
+            .people-media-wrap {
+                margin-bottom: 0;
+                position: relative;
+
+                & > img {
+                    border-radius: 50%;
+                    display: block;
+                    height: 50px;
+                    object-fit: cover;
+                    width: 50px;
+                }
+                & + .people-info-wrap {
+                    margin-left: 15px;
+                }
+
+                & .min-circle-icon {
+                    @include positionRightTop;
+                    padding-top: 0;
+                }
             }
         }
     }
 }
 
+
+
+//丸いタグ
+.min-circle-icon {
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid #000;
+    border-radius: 50%;
+    display: inline-flex;
+    font-size: .7rem;
+    font-weight: bold;
+    justify-content: center;
+    height: 20px;
+    padding-top: 2px;
+    width: 20px;
+
+    &.red-circle {
+        background-color: $red;
+        border: none;
+        color: #fff;
+    }
+}
 
 //
