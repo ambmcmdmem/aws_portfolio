@@ -10942,6 +10942,10 @@ a.text-dark:focus {
   }
 }
 
+ul {
+  padding-left: 0;
+}
+
 .thin-veil {
   height: 100%;
   position: absolute;
@@ -11017,6 +11021,30 @@ a.text-dark:focus {
   top: -5px;
   right: -5px;
   padding-top: 0;
+}
+
+.chat-title {
+  background-color: #666;
+  color: #fff;
+}
+
+.chat-list {
+  list-style: none;
+  margin-bottom: 0;
+}
+
+.chat-list .chat-item {
+  background-color: #f8fafc;
+}
+
+.chat-list .chat-item.my {
+  background-color: #38c172;
+  color: #fff;
+  text-align: right;
+}
+
+.chat-list .chat-min-detail {
+  font-size: 0.75rem;
 }
 
 .min-circle-icon {

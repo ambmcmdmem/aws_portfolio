@@ -107,19 +107,19 @@ $active_user_arr;
                     @endforeach
                 </ul>
                 <div class="chat-room-wrap col-9 px-0">
-                    <div>
+                    <div class="chat-title">
                         <em>{{ $active_user_arr['name'] }}</em>
                     </div>
-                    <div>
+                    <div class="chat-main">
                         <ul class="chat-list">
                             <li class="chat-item">
-                                <time>1日前</time>
+                                <time class="chat-min-detail">1日前</time>
                                 <div class="chat-content">
                                     こんにちは！
                                 </div>
                             </li>
                             <li class="chat-item my">
-                                <time>23分前</time>
+                                <time class="chat-min-detail">23分前</time>
                                 <div class="chat-content">
                                     こんにちは！
                                 </div>

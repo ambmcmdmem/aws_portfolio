@@ -1,15 +1,18 @@
 @import 'variables';
 
-//共通パーツ
+// 共通パーツ
+ul {
+    padding-left: 0;
+}
 
-//上にベールが覆ってるパーツ
+// 上にベールが覆ってるパーツ
 .thin-veil {
     @include fullContainer;
     @include flexCenter;
     background-color: rgba(255, 255, 255, .6);
 }
 
-//トーク相手一覧
+// トーク相手一覧
 .people-info-list-wrap {
     $leftMargin: 15px;
     $activeBorderWidth: 5px;
@@ -76,9 +79,32 @@
     }
 }
 
+// トーク画面
+.chat-title {
+    background-color: #666;
+    color: #fff;
+}
+
+.chat-list {
+    
+    list-style: none;    
+    margin-bottom: 0;
+
+    .chat-item {
+        background-color: $body-bg;
+        &.my {
+            background-color: $green;
+            color: #fff;
+            text-align: right;
+        }
+    }
+    .chat-min-detail {
+        font-size: .75rem;
+    }
+}
 
 
-//丸いタグ
+// 丸いタグ
 .min-circle-icon {
     align-items: center;
     background-color: #fff;
