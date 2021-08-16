@@ -43,11 +43,11 @@
                             <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('Password') }}</label>
 
                             <div class="col-md-6">
-                                <div class="position-relative">
+                                <!--<div class="position-relative">-->
                                     <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="new-password">
-                                    <i class="fas fa-eye fa-lg"></i>
+                                    <!--<i class="fas fa-eye fa-lg"></i>
                                     <i class="fas fa-eye-slash fa-lg"></i>
-                                </div>
+                                </div>-->
 
                                 @error('password')
                                     <span class="invalid-feedback" role="alert">
